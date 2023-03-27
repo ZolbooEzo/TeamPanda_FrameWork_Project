@@ -1,8 +1,11 @@
 package util;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -14,11 +17,8 @@ public class BaseClass {
 
 	@BeforeMethod
 	public static WebDriver getDriver() {
-
 		if (driver == null) {
-
 			String browser = Config.getRequiredData("browser");
-
 			switch (browser) {
 
 			case "chrome":
@@ -29,6 +29,22 @@ public class BaseClass {
 			case "firefox":
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
+
+			case "edge":
+				if (!System.getProperty("os.name").toLowerCase().contains("windows")) {
+					throw new WebDriverException("Your OS doesn't support edge!");
+				}
+				WebDriverManager.edgedriver().setup();
+				driver = new EdgeDriver();
+				break;
+
+			case "safari":
+				if (!System.getProperty("os.name").toLowerCase().contains("mac")) {
+					throw new WebDriverException("You OS doesn't support safari!");
+				}
+				WebDriverManager.safaridriver().setup();
+				driver = new SafariDriver();
+				break;
 
 			default:
 				throw new IllegalArgumentException("Please enter correct browser name");

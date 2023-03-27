@@ -2,16 +2,16 @@
 <testng-results retried="2" ignored="0" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-26T15:04:28 EDT" name="Default suite" finished-at="2023-03-26T15:04:37 EDT" duration-ms="9503">
+  <suite started-at="2023-03-26T20:47:26 EDT" name="Default suite" finished-at="2023-03-26T20:47:35 EDT" duration-ms="9044">
     <groups>
     </groups>
-    <test started-at="2023-03-26T15:04:28 EDT" name="Default test" finished-at="2023-03-26T15:04:37 EDT" duration-ms="9503">
+    <test started-at="2023-03-26T20:47:26 EDT" name="Default test" finished-at="2023-03-26T20:47:35 EDT" duration-ms="9044">
       <class name="testing.LoginTest">
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@1af2d44a]" started-at="2023-03-26T15:04:28 EDT" name="getDriver" finished-at="2023-03-26T15:04:30 EDT" duration-ms="2268" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@618425b5]" started-at="2023-03-26T20:47:26 EDT" name="getDriver" finished-at="2023-03-26T20:47:29 EDT" duration-ms="2581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method retried="true" signature="loginTestFunctionalityCheck()[pri:0, instance:testing.LoginTest@1af2d44a]" started-at="2023-03-26T15:04:30 EDT" name="loginTestFunctionalityCheck" finished-at="2023-03-26T15:04:30 EDT" duration-ms="258" status="SKIP">
+        <test-method retried="true" signature="loginTestFunctionalityCheck()[pri:0, instance:testing.LoginTest@618425b5]" started-at="2023-03-26T20:47:29 EDT" name="loginTestFunctionalityCheck" finished-at="2023-03-26T20:47:29 EDT" duration-ms="261" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a"}
@@ -20,8 +20,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-P52I1HH', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59741}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bfc6138b42d13ee8d46c9fdd6075bffe
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 078584cc3ae42b3068779c77a0692d7b
 *** Element info: {Using=xpath, value=yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a}]]>
             </message>
             <full-stacktrace>
@@ -31,8 +31,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-P52I1HH', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59741}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bfc6138b42d13ee8d46c9fdd6075bffe
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50458}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 078584cc3ae42b3068779c77a0692d7b
 *** Element info: {Using=xpath, value=yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -87,15 +87,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestFunctionalityCheck -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@1af2d44a]" started-at="2023-03-26T15:04:30 EDT" name="closeDriver" finished-at="2023-03-26T15:04:31 EDT" duration-ms="129" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@618425b5]" started-at="2023-03-26T20:47:29 EDT" name="closeDriver" finished-at="2023-03-26T20:47:29 EDT" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@1af2d44a]" started-at="2023-03-26T15:04:31 EDT" name="getDriver" finished-at="2023-03-26T15:04:34 EDT" duration-ms="3311" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@618425b5]" started-at="2023-03-26T20:47:29 EDT" name="getDriver" finished-at="2023-03-26T20:47:32 EDT" duration-ms="2193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method retried="true" signature="loginTestFunctionalityCheck()[pri:0, instance:testing.LoginTest@1af2d44a]" started-at="2023-03-26T15:04:34 EDT" name="loginTestFunctionalityCheck" finished-at="2023-03-26T15:04:34 EDT" duration-ms="10" status="SKIP">
+        <test-method retried="true" signature="loginTestFunctionalityCheck()[pri:0, instance:testing.LoginTest@618425b5]" started-at="2023-03-26T20:47:32 EDT" name="loginTestFunctionalityCheck" finished-at="2023-03-26T20:47:32 EDT" duration-ms="352" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a"}
@@ -104,8 +104,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-P52I1HH', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 62e265fee2d9da9b632f0d3045710956
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50513}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 602e2d140c3ec5314057f9dfcc00de56
 *** Element info: {Using=xpath, value=yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a}]]>
             </message>
             <full-stacktrace>
@@ -115,8 +115,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-P52I1HH', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 62e265fee2d9da9b632f0d3045710956
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50513}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 602e2d140c3ec5314057f9dfcc00de56
 *** Element info: {Using=xpath, value=yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -171,15 +171,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestFunctionalityCheck -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@1af2d44a]" started-at="2023-03-26T15:04:34 EDT" name="closeDriver" finished-at="2023-03-26T15:04:34 EDT" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@618425b5]" started-at="2023-03-26T20:47:32 EDT" name="closeDriver" finished-at="2023-03-26T20:47:32 EDT" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@1af2d44a]" started-at="2023-03-26T15:04:34 EDT" name="getDriver" finished-at="2023-03-26T15:04:36 EDT" duration-ms="2148" status="PASS">
+        <test-method is-config="true" signature="getDriver()[pri:0, instance:testing.LoginTest@618425b5]" started-at="2023-03-26T20:47:32 EDT" name="getDriver" finished-at="2023-03-26T20:47:34 EDT" duration-ms="2107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDriver -->
-        <test-method signature="loginTestFunctionalityCheck()[pri:0, instance:testing.LoginTest@1af2d44a]" started-at="2023-03-26T15:04:36 EDT" name="loginTestFunctionalityCheck" finished-at="2023-03-26T15:04:36 EDT" duration-ms="249" status="FAIL">
+        <test-method signature="loginTestFunctionalityCheck()[pri:0, instance:testing.LoginTest@618425b5]" started-at="2023-03-26T20:47:34 EDT" name="loginTestFunctionalityCheck" finished-at="2023-03-26T20:47:34 EDT" duration-ms="258" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a"}
@@ -188,8 +188,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-P52I1HH', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59849}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f9de9d4dc7f703fbb098cb0519434a3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50564}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 906e0fbe488f313c7d6f44e138d7e93e
 *** Element info: {Using=xpath, value=yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a}]]>
             </message>
             <full-stacktrace>
@@ -199,8 +199,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-P52I1HH', ip: '192.168.1.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59849}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7f9de9d4dc7f703fbb098cb0519434a3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Enkhb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50564}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 906e0fbe488f313c7d6f44e138d7e93e
 *** Element info: {Using=xpath, value=yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -255,7 +255,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestFunctionalityCheck -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@1af2d44a]" started-at="2023-03-26T15:04:37 EDT" name="closeDriver" finished-at="2023-03-26T15:04:37 EDT" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testing.LoginTest@618425b5]" started-at="2023-03-26T20:47:35 EDT" name="closeDriver" finished-at="2023-03-26T20:47:35 EDT" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
