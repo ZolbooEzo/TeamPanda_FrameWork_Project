@@ -29,6 +29,7 @@ public class BaseClass {
 			case "firefox":
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
+				break;
 
 			case "edge":
 				if (!System.getProperty("os.name").toLowerCase().contains("windows")) {
