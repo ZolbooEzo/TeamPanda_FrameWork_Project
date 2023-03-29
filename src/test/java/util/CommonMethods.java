@@ -16,6 +16,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class CommonMethods extends PageInitializer{
 
 	//line added dele after
+	//line added dele after
+	//line added dele after
+	//line added dele after
+	//line added dele after
+	//line added dele after
+	//line added dele after
+	//line added dele after
 	public static String getTimeStamp() {
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
