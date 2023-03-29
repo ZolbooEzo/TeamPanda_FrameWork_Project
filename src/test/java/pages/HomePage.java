@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,9 +14,12 @@ public class HomePage {
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
 	
-	@FindBy (xpath = "yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a")
-	public WebElement loginButton;
 	
+	@FindBy (xpath = "//div[@id='footer']/div/div[2]/a")
+	public List <WebElement> helpOptionsFooter;
+	
+	@FindBy (xpath = "//div[@id='footer']/div/div[2]/a[3]")
+	public WebElement trackOrderLink;
 	
 	
 }

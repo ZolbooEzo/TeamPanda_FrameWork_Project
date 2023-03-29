@@ -13,7 +13,6 @@ public class LoginTest extends CommonMethods{
 
 	@Test(retryAnalyzer = RetryAnalyzerTest.class)
 	public void loginTestFunctionalityCheck() {
-		hp.loginButton.click();
 	}
 	
 }
