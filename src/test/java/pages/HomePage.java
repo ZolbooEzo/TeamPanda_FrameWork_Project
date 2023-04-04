@@ -12,7 +12,15 @@ public class HomePage {
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
 	
-	@FindBy (xpath = "yueiwq//*[@class='styles__FlexColumn-sc-cdaur3-0 eHxtnK']/div/div/a")
+	
+
+	@FindBy(xpath="//input[@name='username']")
+	public WebElement usernameTextBox;
+	
+	@FindBy(xpath= "//input[@name='password']")
+	public WebElement password;
+	
+	@FindBy(xpath = "//button[contains(@class,orangehrm-login-button)]")
 	public WebElement loginButton;
 	
 	

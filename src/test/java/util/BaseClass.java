@@ -61,14 +61,19 @@ public class BaseClass {
 		return driver;
 
 	}
+//
+//	@AfterMethod
+//	public static void closeDriver() {
+//
+//		if (driver != null) {
+//			driver.quit();
+//			driver = null;
+//		}
+//	}
 
-	@AfterMethod
-	public static void closeDriver() {
-
-		if (driver != null) {
-			driver.quit();
-			driver = null;
-		}
+	public static Object getProperty(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
