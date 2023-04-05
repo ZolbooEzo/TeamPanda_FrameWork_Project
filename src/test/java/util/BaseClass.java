@@ -62,7 +62,7 @@ public class BaseClass {
 
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public static void closeDriver() {
 
 		if (driver != null) {
