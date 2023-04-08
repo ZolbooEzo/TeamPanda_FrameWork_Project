@@ -97,4 +97,37 @@ public class CommonMethods extends PageInitializer {
 		getWaitObject().until(ExpectedConditions.visibilityOf(e));
 		Assert.assertTrue(e.isDisplayed());
 	}
+	
+	public static void assertURL(String expected, String url) {
+		wait(1);
+		Assert.assertEquals(expected, url);
+	}
+	
+	public static int numberOfEmployees(WebElement e) {
+		String s = e.getText();
+		char[] chars = s.toCharArray();
+		String letter = "";
+		String num = "";
+		String special = "";
+		for(char i : chars) {
+			if(Character.isAlphabetic(i)) {
+				letter += i;
+			}
+			if(Character.isDigit(i)) {
+				num += i;
+			}
+			if(!Character.isAlphabetic(i) && !Character.isDigit(i)) {
+				special += i;
+			}
+		}
+		int last = Integer.parseInt(num);
+		return last;
+	}
+	
+	public static void assertText(List<WebElement> list, String s) {
+		getWaitObject().until(ExpectedConditions.visibilityOfAllElements(list));
+		for(WebElement e : list) {
+			Assert.assertEquals(e.getText(), s);
+		}
+	}
 }
