@@ -14,9 +14,9 @@ public class DashBoardTest extends CommonMethods {
 	public void DashBoard() throws InterruptedException {
 		doLogin();
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("dashboardUrl"));
-		Assert.assertTrue(db.myActions.isDisplayed());
-		Assert.assertTrue(db.timeAtWork.isDisplayed());
-		Assert.assertTrue(db.quickLaunch.isDisplayed());
+		displayedAssertion(db.myActions);
+		displayedAssertion(db.timeAtWork);
+		displayedAssertion(db.quickLaunch);
 	}
 
 	@Test(groups = { "all", "dashboard", "dashboard2" }, enabled = true, retryAnalyzer = RetryAnalyzerTest.class)
