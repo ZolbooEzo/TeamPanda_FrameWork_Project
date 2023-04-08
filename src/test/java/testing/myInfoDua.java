@@ -1,12 +1,12 @@
 package testing;
-import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 import util.BaseClass;
 import util.CommonMethods;
@@ -96,5 +96,6 @@ public class myInfoDua extends CommonMethods {
 		mi.ECYesDeleteButton.click();
 		wait.until(ExpectedConditions.visibilityOf(mi.JDSuccessBox));
 		//Thread.sleep(4000);
+		
 	}
 }
