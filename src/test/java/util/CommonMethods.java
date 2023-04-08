@@ -3,10 +3,14 @@ package util;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonMethods extends PageInitializer{
 
@@ -29,9 +33,27 @@ public class CommonMethods extends PageInitializer{
 		} catch (Exception ex) {
 			System.out.println("Can't take screen shot!");
 		}
+		
 
 		return picBytes;
 
 	}
 	
+	public static void clickFromMenu(List<WebElement> l, String s) {
+		getWaitObject().until(ExpectedConditions.visibilityOfAllElements(l));
+		for (WebElement e : l) {
+			if (e.getText().equalsIgnoreCase(s)) {
+				click(e);
+				break;
+			}
+		}
+
+	}
+	public static WebDriverWait getWaitObject() {
+        WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(),15);
+        return wait;
+    }
+	public static void click(WebElement e) {
+        getWaitObject().until(ExpectedConditions.elementToBeClickable(e)).click();
+    }
 }
