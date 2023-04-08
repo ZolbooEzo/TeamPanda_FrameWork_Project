@@ -5,8 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -135,5 +133,9 @@ public class CommonMethods extends PageInitializer {
 		sendText(hp.userNameBox, uname);
 		sendText(hp.passwordBox, password);
 		click(hp.loginButton);
+	}
+	
+	public static void waitForVisibility(WebElement e) {
+		getWaitObject().until(ExpectedConditions.visibilityOf(e));
 	}
 }
