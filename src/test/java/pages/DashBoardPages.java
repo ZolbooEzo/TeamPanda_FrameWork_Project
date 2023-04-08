@@ -12,16 +12,6 @@ public class DashBoardPages {
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
 	
-	@FindBy (xpath = "//input[@name='username']")
-	public WebElement userNameBox;
-	
-	@FindBy (xpath = "//input[@name='password']")
-	public WebElement passwordBox;
-	
-	
-	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']")
-	public WebElement loginButton;
-	
 	
 	@FindBy (xpath = "(//p[@class='oxd-text oxd-text--p'])[1]")
 	public WebElement timeAtWork;
@@ -32,10 +22,8 @@ public class DashBoardPages {
 	@FindBy (xpath = "(//p[@class='oxd-text oxd-text--p'])[7]")
 	public WebElement quickLaunch;
 	
-	
 	@FindBy (xpath = "//i[@class='oxd-icon bi-gear-fill orangehrm-leave-card-icon']")
 	public WebElement switchBttn;
-	
 	
 	@FindBy (xpath = "//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
 	public WebElement switchTab;
@@ -43,14 +31,11 @@ public class DashBoardPages {
 	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']")
 	public WebElement saveButtn;
 	
-	
-	
 	@FindBy (xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-quick-launch-card'][1]")
 	public WebElement assingLeave;
 	
 	@FindBy (xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-quick-launch-card'][2]")
 	public WebElement leaveList;
-	
 	
 	@FindBy (xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-quick-launch-card'][3]")
 	public WebElement timeSheets;

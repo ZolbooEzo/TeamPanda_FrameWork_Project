@@ -12,6 +12,14 @@ public class HomePage {
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
 	
+	
+	
+	@FindBy (xpath = "//input[@name='username']")
+	public WebElement userNameBox;
+	
+	@FindBy (xpath = "//input[@name='password']")
+	public WebElement passwordBox;
+	
 	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']")
 	public WebElement loginButton;
 	
