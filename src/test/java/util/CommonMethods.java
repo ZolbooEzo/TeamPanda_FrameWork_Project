@@ -7,6 +7,9 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonMethods extends PageInitializer{
 
@@ -33,5 +36,13 @@ public class CommonMethods extends PageInitializer{
 		return picBytes;
 
 	}
+	public static void click(WebElement element) {
+        getWaitObject().until(ExpectedConditions.elementToBeClickable(element)).click();
+    }
+
+public static WebDriverWait getWaitObject() {
+        WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(), 7);
+        return wait;
+    }
 	
 }
