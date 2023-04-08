@@ -61,7 +61,7 @@ public class CommonMethods extends PageInitializer {
 	}
 
 
-	public static WebDriverWait getWaitObject() {
+	public static WebDriverWait getWaitObject(){
 		WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(), 15);
 		return wait;
 	}
@@ -74,35 +74,11 @@ public class CommonMethods extends PageInitializer {
 		getWaitObject().until(ExpectedConditions.visibilityOf(e)).sendKeys(s);
 	}
 
-	
-	public static WebDriverWait getWaitObject() {
-		WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(), Constants.explicit_time);
-		return wait;
-	}
-	
-	public static void click(WebElement e) {
-		getWaitObject().until(ExpectedConditions.elementToBeClickable(e)).click();
-	}
-	
-	public static void sendText(WebElement e, String s) {
-		getWaitObject().until(ExpectedConditions.visibilityOf(e)).sendKeys(s);
-	}
-	
-
 	public static void doLogin() {
 		sendText(hp.userNameBox, Config.getUserData("username"));
 		sendText(hp.passwordBox, Config.getUserData("userpassword"));
 		click(hp.loginButton);
 	}
-
-
-	public static void assertIfListContainsElement(List<WebElement> list, String s) {
-		List<String> l = new ArrayList<String>();
-		for (WebElement e : list) {
-			l.add(e.getText());
-		}
-		if (l.contains(s)) {
-
 	
 	public static void assertIfListContainsElement(List <WebElement> list, String s) {
 		List<String> l = new ArrayList<String>();
@@ -117,31 +93,8 @@ public class CommonMethods extends PageInitializer {
 		}
 	}
 
-	public static String randomName() {
-		Random random = new Random();
-		String newString = "";
-		String characters = "abcdefghijklmnopqrstuvwxyz";
-		int len = 6;
-
-		for (int i = 0; i < len; i++) {
-
-		for(int i = 0; i < len ; i++) {
-
-			newString += characters.charAt(random.nextInt(characters.length()));
-		}
-		return newString;
-	}
-
-
-
-	
-
 	public static void displayedAssertion(WebElement e) {
 		getWaitObject().until(ExpectedConditions.visibilityOf(e));
 		Assert.assertTrue(e.isDisplayed());
 	}
-
-
-
-
 }
