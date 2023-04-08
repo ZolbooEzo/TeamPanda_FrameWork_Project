@@ -1,5 +1,7 @@
 package util;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -55,6 +57,9 @@ public class BaseClass {
 			driver.manage().window().maximize();
 			driver.get(Config.getRequiredData("url"));
 			PageInitializer.initializer();
+			
+			
+			
 
 		}
 
