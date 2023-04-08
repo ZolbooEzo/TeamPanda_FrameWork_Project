@@ -26,6 +26,6 @@ public class HomePage {
 	@FindBy (xpath = "//ul[@class='oxd-main-menu']/li/a")
 	public List <WebElement> leftMenuList;
 	
-	
-	
+	@FindBy (xpath = "//p[@class='oxd-text oxd-text--p oxd-alert-content-text']")
+	public WebElement invalidText;
 }

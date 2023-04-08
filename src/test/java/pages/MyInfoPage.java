@@ -14,7 +14,6 @@ public class MyInfoPage {
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
 	
-	
 	@FindBy (xpath = "//div[@class='orangehrm-tabs']/div")
 	public List <WebElement> MyInfoList;
 	
@@ -65,10 +64,4 @@ public class MyInfoPage {
 	
 	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']")
 	public WebElement deleteConfimation;
-	
-	
-	
-	
-	
-	
 }

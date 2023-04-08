@@ -46,7 +46,6 @@ public class DirectoryPage {
 	
 	@FindBy (xpath = "//div[@class='orangehrm-container']/div/div[1]/div")
 	public WebElement firstEmployeeOnTheList;
-	
 					  
 	@FindBy (xpath = "//p[@class='oxd-text oxd-text--p orangehrm-directory-card-header --break-words'][1]")
 	public WebElement firstEmployeeName;

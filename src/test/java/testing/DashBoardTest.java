@@ -1,13 +1,15 @@
 package testing;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import util.BaseClass;
 import util.CommonMethods;
 import util.Config;
+import util.ListernersTestNG;
 import util.RetryAnalyzerTest;
-
+@Listeners(ListernersTestNG.class)
 public class DashBoardTest extends CommonMethods {
 
 	@Test(groups = { "all", "dashboard", "dashboard1" }, enabled = true, retryAnalyzer = RetryAnalyzerTest.class)
@@ -33,33 +35,29 @@ public class DashBoardTest extends CommonMethods {
 	public void QuickLaunchFunctions() throws InterruptedException {
 		doLogin();
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("dashboardUrl"));
+		
 		click(db.assingLeave);
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("assingLeaveURL"));
-		wait(1);
 		BaseClass.getDriver().navigate().back();
+		
 		click(db.leaveList);
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("leaveListURL"));
-		wait(1);
 		BaseClass.getDriver().navigate().back();
 		
 		click(db.timeSheets);
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("timeSheets"));
-		wait(1);
 		BaseClass.getDriver().navigate().back();
 		
 		click(db.applyLeave);
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("applyLeave"));
-		wait(1);
 		BaseClass.getDriver().navigate().back();
 		click(db.myLeave);
 		
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("myLeave"));
-		wait(1);
 		BaseClass.getDriver().navigate().back();
 		click(db.myTimeSheet);
 		
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("timeSheet"));
-		wait(1);
 		BaseClass.getDriver().navigate().back();
 	}
 

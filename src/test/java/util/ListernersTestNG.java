@@ -10,11 +10,12 @@ public class ListernersTestNG implements ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
+		System.out.println(">>>>>>>>>>Test Started<<<<<<<<<<");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		
+		System.out.println(">>>>>>>>>>Test Executed Successfully<<<<<<<<<<");
 	}
 
 	@Override

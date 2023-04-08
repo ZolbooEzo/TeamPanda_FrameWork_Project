@@ -130,4 +130,10 @@ public class CommonMethods extends PageInitializer {
 			Assert.assertEquals(e.getText(), s);
 		}
 	}
+	
+	public static void doLogin(String uname, String password) {
+		sendText(hp.userNameBox, uname);
+		sendText(hp.passwordBox, password);
+		click(hp.loginButton);
+	}
 }

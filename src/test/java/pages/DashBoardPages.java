@@ -12,7 +12,6 @@ public class DashBoardPages {
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
 	
-	
 	@FindBy (xpath = "(//p[@class='oxd-text oxd-text--p'])[1]")
 	public WebElement timeAtWork;
 	
@@ -48,8 +47,4 @@ public class DashBoardPages {
 	
 	@FindBy (xpath = "//div[@class='oxd-grid-item oxd-grid-item--gutters orangehrm-quick-launch-card'][6]")
 	public WebElement myTimeSheet;
-	
-	
-	
-
 }
