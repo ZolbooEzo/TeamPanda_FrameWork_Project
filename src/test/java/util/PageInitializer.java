@@ -5,6 +5,7 @@ import pages.DashBoardPages;
 import pages.DirectoryPage;
 import pages.MyInfoPage;
 import pages.MyInfoPageDua;
+import pages.PIMPage;
 import pages.HomePage;
 
 public class PageInitializer extends BaseClass{
@@ -14,6 +15,7 @@ public class PageInitializer extends BaseClass{
 	public static MyInfoPage mip;
 	public static DirectoryPage dp;
 	public static MyInfoPageDua mi;
+	public static PIMPage pp;
 
 	public static void initializer() {
 		hp = new HomePage();
@@ -21,6 +23,7 @@ public class PageInitializer extends BaseClass{
 		mip = new MyInfoPage();
 		dp = new DirectoryPage();
 		mi = new MyInfoPageDua();
+		pp = new PIMPage();
 	}
 	
 	

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -138,4 +139,5 @@ public class CommonMethods extends PageInitializer {
 	public static void waitForVisibility(WebElement e) {
 		getWaitObject().until(ExpectedConditions.visibilityOf(e));
 	}
+
 }
