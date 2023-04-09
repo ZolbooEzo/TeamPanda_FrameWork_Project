@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testing.PIMTest">
+      <class name="testing.PIMtest">
         <methods>
           <include name="getDriver"/>
-          <include name="Addemployee"/>
+          <include name="Deleteemployee"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- testing.PIMTest -->
+      </class> <!-- testing.PIMtest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

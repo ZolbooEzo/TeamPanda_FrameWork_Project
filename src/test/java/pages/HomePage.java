@@ -24,8 +24,5 @@ public class HomePage {
 	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']")
 	public WebElement loginButton;
 	
-	@FindBy (xpath = "//ul[@class='oxd-main-menu']/li/a")
-	public List <WebElement> leftMenuList;
-	
-	
+		
 }

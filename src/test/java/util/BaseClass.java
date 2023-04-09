@@ -56,7 +56,6 @@ public class BaseClass {
 
 			driver.manage().window().maximize();
 			driver.get(Config.getRequiredData("url"));
-			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			PageInitializer.initializer();
 
 		}

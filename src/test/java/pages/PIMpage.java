@@ -6,22 +6,28 @@ import org.openqa.selenium.support.PageFactory;
 
 import util.BaseClass;
 
-public class PIMpage {
 
-	@FindBy (xpath = "(//span[@Class ='oxd-text oxd-text--span oxd-main-menu-item--name']")
+public class PIMpage {
+	
+		
+	public PIMpage() {
+				PageFactory.initElements(BaseClass.getDriver(), this);
+			}
+	
+	@FindBy (xpath = "(//span[@Class ='oxd-text oxd-text--span oxd-main-menu-item--name'])[2]")
 	public WebElement PIMButton;
 	
 	
-	@FindBy (xpath = "//a[@class='oxd-topbar-body-nav-tab-item']")
+	@FindBy (xpath = "(//a[@class='oxd-topbar-body-nav-tab-item'])[2]")
 	public WebElement addEmployee;
 	
 	@FindBy (xpath = "(//input[@class='oxd-input oxd-input--active orangehrm-firstname'])[1]")
 	public WebElement firstName;
 	
-	@FindBy (xpath = "//input[@class='oxd-input-group oxd-input-field-bottom-space'])")
+	@FindBy (xpath = "//input[@name = 'middleName']")
 	public WebElement middleName;
 	
-	@FindBy (xpath = "//input[@class='oxd-input oxd-input--active orangehrm-lastname']")
+	@FindBy (xpath = "//input[@name = 'lastName']")
 	public WebElement lastName;
 	
 	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space\']")
@@ -48,44 +54,37 @@ public class PIMpage {
 	
 	
 		
-	@FindBy (xpath = "//a[@class='orangehrm-tabs-item']")
+	@FindBy (xpath = "//div[@class='orangehrm-tabs-wrapper'][2]")
 	public WebElement contactdetails;
 	
 	@FindBy (xpath = "//div[@class='oxd-select-text--after']")
 	public WebElement country;
 	
+	@FindBy (xpath = "//div[@class ='oxd-select-text oxd-select-text--active']")
+	public WebElement Afghanistan;
 	
-
-	
-	
+		
 	
 	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']")
 	public WebElement yesDeleteButton;
 	
-	@FindBy (xpath = "//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name']")
-	public WebElement leave;
+	@FindBy (xpath = "(//span[@Class ='oxd-text oxd-text--span oxd-main-menu-item--name'])[3]")
+	public WebElement leaveButton;
 	
 	@FindBy (xpath = "//div[@class='oxd-autocomplete-text-input oxd-autocomplete-text-input--active']")
-	public WebElement employeeNameBox1;
+	public WebElement EmNameBox;	
+	
+	@FindBy (xpath = "//input[@placeholder='Type for hints...']")
+	public WebElement EmNameBox2;	
 	
 	
-	@FindBy (xpath = "//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name']")
-	public WebElement time;
 	
-	
-	
-	@FindBy (xpath = "//div[@class='oxd-autocomplete-text-input oxd-autocomplete-text-input--active']")
-	public WebElement employeeNameBox2;
-
 	@FindBy (xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']")
 	public WebElement viewButton;
+		
 	
-	
-	@FindBy (xpath = ("(//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1]"))
-	public WebElement recuitmentButton;
-	
-	@FindBy (xpath = "(//div[@class='data-v-2fe357a6'])")
-	public WebElement keyword;
+	@FindBy (xpath = "//div[@class='orangehrm-horizontal-padding orangehrm-vertical-padding']")
+	public WebElement notfoundpage;
 	
 	
 	
