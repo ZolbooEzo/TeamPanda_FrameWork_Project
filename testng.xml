@@ -8,6 +8,7 @@
       <class name="testing.DirectoryTest"/>
       <class name="testing.LoginTest"/>
       <class name="testing.MyInfoDuaTest"/>
+      <class name="testing.PIMTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
