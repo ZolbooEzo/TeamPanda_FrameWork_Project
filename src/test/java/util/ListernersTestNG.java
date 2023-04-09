@@ -15,7 +15,8 @@ public class ListernersTestNG implements ITestListener{
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println(">>>>>>>>>>Test Executed Successfully<<<<<<<<<<");
+		System.out.println(">>>>>>>>>>Test Passed<<<<<<<<<<");
+		System.out.println("Name: ----" + result.getName() + " ---- Passed!");
 	}
 
 	@Override
