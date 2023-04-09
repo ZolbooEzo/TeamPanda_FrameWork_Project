@@ -9,6 +9,7 @@ import util.CommonMethods;
 import util.Config;
 import util.RetryAnalyzerTest;
 
+@Listeners(ListernersTestNG.class)
 public class MyInfoDuaTest extends CommonMethods {
 
 	@Test(enabled = true, groups = { "all", "allMyInfo", "myInfoDua1" }, retryAnalyzer = RetryAnalyzerTest.class)
