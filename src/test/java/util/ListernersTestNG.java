@@ -23,6 +23,7 @@ public class ListernersTestNG implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		CommonMethods.takeScreenshot(result.getName());
 		System.out.println("Screen shot is captured!");
+		System.out.println("Name: ----" + result.getName() + " ---- Failed");
 	}
 
 	@Override
