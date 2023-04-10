@@ -55,7 +55,7 @@ public class PerformanceTest extends CommonMethods {
 		sendText(perp.comment, "great!");
 		click(perp.saveComment);
 		wait(2);
-		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("addcomment"));
+		displayedAssertion(perp.sMessage);
 	}
 
 }
