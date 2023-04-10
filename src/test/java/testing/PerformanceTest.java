@@ -1,15 +1,19 @@
 package testing;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import util.BaseClass;
 import util.CommonMethods;
 import util.Config;
+import util.ListernersTestNG;
+import util.RetryAnalyzerTest;
 
-public class PerformanceTest extends CommonMethods{
-	
-	@Test
+@Listeners(ListernersTestNG.class)
+public class PerformanceTest extends CommonMethods {
+
+	@Test(enabled = true, groups = { "all", "performance", "performance1" }, retryAnalyzer = RetryAnalyzerTest.class)
 	public void verifyThePerformanceMenuIsWorking() {
 		doLogin();
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("dashboardUrl"));
@@ -24,8 +28,8 @@ public class PerformanceTest extends CommonMethods{
 		waitForVisibility(perp.noRecords);
 		Assert.assertTrue(perp.noRecords.isDisplayed());
 	}
-	
-	@Test
+
+	@Test(enabled = true, groups = { "all", "performance", "performance2" }, retryAnalyzer = RetryAnalyzerTest.class)
 	public void toVerifyTheSearchingOptionByNameIsWorking() {
 		doLogin();
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("dashboardUrl"));
@@ -38,8 +42,8 @@ public class PerformanceTest extends CommonMethods{
 		wait(2);
 		Assert.assertEquals(perp.charlieText.getText(), "Charlie Carter");
 	}
-	
-	@Test
+
+	@Test(enabled = true, groups = { "all", "performance", "performance3" }, retryAnalyzer = RetryAnalyzerTest.class)
 	public void toVerifyTheAddTrackersLogIsWorking() {
 		doLogin();
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("dashboardUrl"));
@@ -53,14 +57,5 @@ public class PerformanceTest extends CommonMethods{
 		wait(2);
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("addcomment"));
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }

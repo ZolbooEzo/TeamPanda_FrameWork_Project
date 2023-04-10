@@ -1,6 +1,7 @@
 package util;
 
 
+import pages.AdminPage;
 import pages.DashBoardPages;
 import pages.DirectoryPage;
 import pages.MyInfoPage;
@@ -18,6 +19,7 @@ public class PageInitializer extends BaseClass{
 	public static MyInfoPageDua mi;
 	public static PIMPage pp;
 	public static PerformancePage perp;
+	public static AdminPage ap;
 
 	public static void initializer() {
 		hp = new HomePage();
@@ -27,6 +29,7 @@ public class PageInitializer extends BaseClass{
 		mi = new MyInfoPageDua();
 		pp = new PIMPage();
 		perp = new PerformancePage();
+		ap = new AdminPage();
 	}
 	
 	

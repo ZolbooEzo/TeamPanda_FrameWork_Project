@@ -5,7 +5,10 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
+
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -138,5 +141,38 @@ public class CommonMethods extends PageInitializer {
 	public static void waitForVisibility(WebElement e) {
 		getWaitObject().until(ExpectedConditions.visibilityOf(e));
 	}
+	
+	public static String randomUserName() {
+		Random random = new Random();
+		String newString = "test";
+		String num = "123456789abcdefjgijklmnopqrstuvwyx";
+		
+		for(int i = 0; i < 4; i++) {
+			newString += num.charAt(random.nextInt(num.length()));
+		}
+		
+		return newString;
+	}
+	
+	public static void javaClick(WebElement e) {
+		getWaitObject().until(ExpectedConditions.elementToBeClickable(e));
+		JavascriptExecutor js = (JavascriptExecutor)BaseClass.getDriver();
+		js.executeScript("arguments[0].click;", e);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
