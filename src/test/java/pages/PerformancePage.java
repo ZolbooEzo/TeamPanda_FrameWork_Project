@@ -68,5 +68,8 @@ public class PerformancePage {
 	@FindBy (xpath = "//div[@class='oxd-form-actions orangehrm-form-action']/button[2]")
 	public WebElement saveComment;
 	
+	@FindBy(xpath = "//div[@class='oxd-toast oxd-toast--success oxd-toast-container--toast']")
+	public WebElement sMessage;	
+	
 	
 }
