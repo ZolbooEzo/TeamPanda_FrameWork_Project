@@ -6,6 +6,7 @@ import pages.DirectoryPage;
 import pages.MyInfoPage;
 import pages.MyInfoPageDua;
 import pages.PIMPage;
+import pages.PerformancePage;
 import pages.HomePage;
 
 public class PageInitializer extends BaseClass{
@@ -16,6 +17,7 @@ public class PageInitializer extends BaseClass{
 	public static DirectoryPage dp;
 	public static MyInfoPageDua mi;
 	public static PIMPage pp;
+	public static PerformancePage perp;
 
 	public static void initializer() {
 		hp = new HomePage();
@@ -24,6 +26,7 @@ public class PageInitializer extends BaseClass{
 		dp = new DirectoryPage();
 		mi = new MyInfoPageDua();
 		pp = new PIMPage();
+		perp = new PerformancePage();
 	}
 	
 	
