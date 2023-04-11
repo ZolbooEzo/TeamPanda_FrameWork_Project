@@ -39,7 +39,7 @@ public class PIMPage {
 	@FindBy(xpath = "//i[@class='oxd-icon bi-pencil-fill']")
 	public WebElement editButton;
 
-	@FindBy(xpath = "//i[@class='oxd-icon bi-trash']")
+	@FindBy(xpath = "(//i[@class='oxd-icon bi-trash'])[5]")
 	public WebElement deleteButton;
 
 	@FindBy(xpath = "//div[@class='orangehrm-tabs-wrapper'][2]")
