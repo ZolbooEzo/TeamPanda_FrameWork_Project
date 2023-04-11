@@ -38,7 +38,7 @@ public class PerformancePage {
 	@FindBy (xpath = "//div[@class='oxd-toast oxd-toast--info oxd-toast-container--toast']")
 	public WebElement noRecords;
 	
-	@FindBy (xpath = "//div[@class='oxd-autocomplete-dropdown --positon-bottom']/div[3]")
+	@FindBy (xpath = "//div[@class='oxd-autocomplete-dropdown --positon-bottom']/div[5]")
 	public WebElement Charlie;
 	
 	@FindBy (xpath = "//div[@class='oxd-autocomplete-text-input oxd-autocomplete-text-input--active']/input")

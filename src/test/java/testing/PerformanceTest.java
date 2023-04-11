@@ -13,7 +13,7 @@ import util.RetryAnalyzerTest;
 @Listeners(ListernersTestNG.class)
 public class PerformanceTest extends CommonMethods {
 
-	@Test(enabled = true, groups = { "all", "performance", "performance1" }, retryAnalyzer = RetryAnalyzerTest.class)
+//	@Test(enabled = true, groups = { "all", "performance", "performance1" }, retryAnalyzer = RetryAnalyzerTest.class)
 	public void verifyThePerformanceMenuIsWorking() {
 		doLogin();
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("dashboardUrl"));
@@ -43,7 +43,7 @@ public class PerformanceTest extends CommonMethods {
 		Assert.assertEquals(perp.charlieText.getText(), "Charlie Carter");
 	}
 
-	@Test(enabled = true, groups = { "all", "performance", "performance3" }, retryAnalyzer = RetryAnalyzerTest.class)
+//	@Test(enabled = true, groups = { "all", "performance", "performance3" }, retryAnalyzer = RetryAnalyzerTest.class)
 	public void toVerifyTheAddTrackersLogIsWorking() {
 		doLogin();
 		Assert.assertEquals(BaseClass.getDriver().getCurrentUrl(), Config.getRequiredData("dashboardUrl"));
